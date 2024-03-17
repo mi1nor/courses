@@ -8,11 +8,12 @@
     {% endblock %}
 </head>
 <body>
-    <header>
-        {% block header %}
-        {% endblock %}
-    </header>
-    <main>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="{% url 'shop:index' %}" class="navbar-brand">Couses Shop</a>
+        </div>
+    </nav>
+    <main class="container">
         {% block main %}
         {% endblock %}
     </main>
